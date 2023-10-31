@@ -1,70 +1,84 @@
 * {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
 }
-
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
 
 body {
-    display: flex;
-    flex-wrap: column wrap;
-    height: 100vh;
+  display: flex;
 }
 
-
-header {
-    background-color: rgb(246, 246, 246);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-}
-
-
+nav,
 main {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
-
-.skills-list {
-    display: flex;
-    flex-wrap: row wrap;
-    list-style: none;
-    padding: 0;
+nav {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  height: 100vh;
 }
-
 
 .introduction,
 .about,
 .work,
 .links {
-    padding: 40px 40px;
+  padding: 40px 40px;
 }
 
+.links-icon {
+  margin: 10px 4px 0 0;
+}
 
 button {
-	background-color:transparent;
-	border:1px solid black;
-	cursor: auto;
-	font-size:16px;
-	padding:12px 32px;
-  }
-
-p,
-li {
-    padding: 32px 0 0 0;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: auto;
+  font-size: 16px;
+  padding: 12px 32px;
 }
 
+.skill-button {
+  margin: 20px 0 10px 0;
+  padding: 6px 18px;
+  font-size: 12px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+p {
+  padding-top: 30px;
+}
+
+.about-text {
+  max-width: 75%;
+}
 
 img {
-    width: 20px;
-    height: auto;
+  width: 20px;
+  height: auto;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.skills-box {
+  align-content: flex-start;
+  background-color: rgb(246, 246, 246);
+  padding: 20px;
+  min-width: 160px;
+  max-width: 280px;
 }
