@@ -14,6 +14,7 @@ a {
 main {
   flex-wrap: wrap;
   margin-left: 300px;
+  min-width: 400px;
 }
 
 nav {
